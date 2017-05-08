@@ -1,4 +1,6 @@
 # QF465
+#strategy.h
+
 #include <iostream>
 #include <stdio.h>
 #include <math.h>
