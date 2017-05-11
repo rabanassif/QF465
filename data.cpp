@@ -9,5 +9,8 @@ using namespace std;
 //getting ticker and divident yield from R 
 void main()
 {
-int system(rscipt.divyield);  
-}
+int system("Rscipt DivYield"); 
+cout << "current divident yield is:" << endl; 
+system("pause");
+  
+}; 
