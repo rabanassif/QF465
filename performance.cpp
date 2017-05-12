@@ -19,9 +19,11 @@ double Performance::sharpeRatio(double* dividends, double* closings, double curr
 
 	returns = (closePrice - startPrice)/ startPrice;
 	sharpe = (returns - rf)/.14;
+	
+	cout << "Sharpe Ratio is: " << sharpe << endl;
 
 	return sharpe;
 
-	cout << "Sharpe Ratio is: " << sharpe << endl;
+	
 
 }; 
