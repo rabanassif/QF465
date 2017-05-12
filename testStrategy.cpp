@@ -15,7 +15,7 @@ strategy::strategy()
 
 void strategy::buyOrShort()
 {
-        double dividends [8] = {.31,.31,.28,.29,.33,.32,.30,.30};
+        double dividends [8] = {.31,.30,.28,.29,.33,.32,.31,.30};
         double closings [8] = {41.23, 42.98, 44.67, 43.11, 42.56, 40.09, 39.45, 41.88};
         double current = 3.2;
         double yields [8];
