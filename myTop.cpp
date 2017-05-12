@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <stdio.h>
 #include <math.h>
@@ -6,7 +7,11 @@
 //#using <System.dll>      // Common Language Runtime Support (/clr)
 #include <fstream>
 #include "testStrategy2.h"
-using namespace std;
+#include "performance.h"
+#include "performance1.h"
+#include "strategy.h"
+#include "TestStrategy.h"
+
 
  int main()
 {
