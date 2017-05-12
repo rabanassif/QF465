@@ -1,0 +1,17 @@
+library(quantmod)
+library(zoo)
+library(fBasics)
+
+#input whatever ticket you want 
+S <- "SPY"
+# get Closing prices
+p <- Cl(getSymbols(s, src='yahoo', auto.assign=FALSE, from='2010-01-01', 
+                   to='2012-06-20'))
+# get dividends
+div <- getDividends(s, from=start(p), to=end(p))
+ydiv <- runSum(div, n=4) # rolling sum of last 4 quarters
+out <- na.locf(merge(p, ydiv, all=TRUE)) # merge and fill in NAs with previous values
+out$yld <- out[, 2] / out[, 1] # "current yield"
+tail(out)
+write.csv( ydiv, file = "DivYield.csv")
+
