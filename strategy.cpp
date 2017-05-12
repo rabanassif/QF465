@@ -34,8 +34,8 @@ int Strategy::Run(double* dividends, double* closings, double current)
 	
 	average_yield = (average_yield * 100) / 8;
 
-	cout << "Average yield for 2 years is: " << average_yield <<endl;
-	cout << "Current yield is: " << current << endl;
+	cout << "The Average yield for 2 years is: " << average_yield <<endl;
+	cout << "The Current yield is: " << current << endl;
 
 	if (current >= (average_yield * 1.341))
 	{
